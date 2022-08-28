@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="Exercicio1.html" method="post">
+        <fieldset>
+            <legend>Cadastro Perfil</legend>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input autofocus maxlength="100" placeholder="Digite teu nome" type="text" id="nome" name="nome" required>
+            </div>
+
+            <div>
+                <label>Data de Nascimento</label>
+                <input name="dtNasc" value="2022-08-17" type="date" max="2022-08-17" min="1901-01-01">
+            </div>
+
+            <div>
+                <label>Gosta de Filmes?</label>
+                <input type="range" min="0" max="10" step="1" nome="gostafilme">
+            </div>
+
+            <div>
+                <label>Cor Favorita</label>
+                <input type="color" name="corfavorita">
+            </div>
+
+            <div>
+                <label>Sexo</label>
+                <input checked value="F" name="sexo" id="fem" type="radio"><label for="fem">Feminino</label>
+                <input         value="M" name="sexo" id="masc" type="radio"><label for="masc">Masculino</label>
+            </div>
+
+            <div>
+                <label>CEP:</label>
+                <input name="cep" pattern="[0-9]{5}-[0-9]{3}" title="Padrao do CEP: 99999-999">
+            </div>
+
+            <div>
+                <label>Senha</label>
+                <input type="password" name="senha">
+            </div>
+
+            <div>
+                <label>Esporte Favorito</label>
+                <input value="Futebol" id="fut" name="esporte" type="checkbox"><label for="fut">Futebol</label>
+                <input value="Basquete" id="basq" name="esporte" type="checkbox"><label for="basq">Basquete</label>
+                <input value="Volei" id="vol" name="esporte" type="checkbox"><label for="vol">Volei</label>
+            </div>
+
+            <div>
+                <label>Foto</label>
+                <input type="file" name="foto">
+            </div>
+
+            <div>
+                <label>Profissao</label>
+                <select name="profissao" id="prof">
+                    <optgroup label="Analista de Sistemas"></optgroup>
+                    <option value="ASJ">Analista de Sistemas - Junior</option>
+                    <option value="ASP">Analista de Sistemas - Pleno</option>
+                    <option value="ASS">Analista de Sistemas - Senior</option>
+
+                    <optgroup label="Programador"></optgroup>
+                    <option value="PRT" disabled>Tecnico</option>
+                    <option value="PRJ">Programador Junior</option>
+                    <option value="PRP">Programador Pleno</option>
+                    <option value="PRS">Programador Senior</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Cidade</label>
+                <input name="cidade" id="cidade" list="listaCidades">
+                <datalist id="listaCidades">
+                    <option value="Sorocaba"></option>
+                    <option value="São Roque"></option>
+                    <option value="São Paulo"></option>
+                </datalist>
+            </div>
+
+            <div contenteditable="true">
+                <details>
+                    <summary>Copiando <progress max="100" value="75"> 75%</summary>
+                    <dl>
+                    <dt>Tamanho total:</dt>
+                    <dd>39.248KB</dd>
+                    <dt>Transferido:</dt>
+                    <dd>14.718</dd>
+                    <dt>Taxa de transferência:</dt>
+                    <dd>127KB/s</dd>
+                    <dt>Nome do arquivo:</dt>
+                    <dd>HTML5.mp4</dd>
+                    </dl>
+                   </details>
+            </div>
+
+            <div>
+                <button type="submit">Salvar</button>
+                <button type="submit" formnovalidate>Salvar Rascunho</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
