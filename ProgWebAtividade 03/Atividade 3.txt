@@ -1,0 +1,26 @@
+1:R:	h1 {
+            text-align: center;
+	    font-size: 100px;
+        }
+	li, p {
+	    padding 2;
+	}
+	
+
+2:R:	body {
+            background-color: rgb(149, 156, 154);
+        }
+
+
+3:R:	.alinhado{
+	    display: inline-block;
+	}
+
+	<p class="alinhado" style="color: green;">ALINHADO</p>
+
+
+4:R:	.bloco{
+	    display: block
+	}
+
+	<p class="bloco">BLOCO</p>
