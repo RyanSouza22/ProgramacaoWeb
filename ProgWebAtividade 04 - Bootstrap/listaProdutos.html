@@ -21,21 +21,23 @@
                 </a>
 
                 <ul class="nav col-12 col-lg-12 me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Sobre nós</a></li>
+                    <li><a href="#herois" class="nav-link px-2 text-white">Herois</a></li>
+                    <li><a href="#carrinhos" class="nav-link px-2 text-white">Carrinhos</a></li>
+                    <li><a href="#bonecas" class="nav-link px-2 text-white">Bonecas</a></li>
                 </ul>
 
                 <form class="col-12 col-lg-10 mb-6 mb-lg-6 me-lg-3" role="search">
-                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Carrinho, Bonecas..."
+                    <input type="search" id="procurar" class="form-control form-control-dark text-bg-dark" placeholder="Carrinho, Bonecas..."
                         aria-label="Search">
                 </form>
 
                 <div class="text-end">
-                    <button type="button" class="btn btn-primary me-2" style="color: black; background-color: blue; font-weight: bolder;">Pesquisar</button>
+                    <button onclick="procurarItem()" type="button" class="btn btn-primary me-2" style="color: black; background-color: blue; font-weight: bolder;">Pesquisar</button>
                 </div>
             </div>
         </div>
     </header>
+
 
     <div class="container">
         <div class="row mb-4" style="margin-top: 100px;">
@@ -43,34 +45,35 @@
 
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img style="height: 500px;" src="img/hero1.jpg" class="d-block w-50" alt="...">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img style="height: 500px; margin: 0 auto;" src="img/hero1.jpg" class="d-block w-50" alt="heroi1">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img style="height: 500px;" src="img/hero2.jpg" class="d-block w-50" alt="...">
+                            <img style="height: 500px; margin: 0 auto;" src="img/hero2.jpg" class="d-block w-50" alt="heroi2">
                         </div>
                         <div class="carousel-item">
-                            <img style="height: 500px;" src="img/hero3.jpg" class="d-block w-50" alt="...">
+                            <img style="height: 500px; margin: 0 auto;" src="img/hero3.jpg" class="d-block w-50" alt="heroi3">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img style="height: 500px;" src="img/carrinho1.jpg" class="d-block w-50" alt="...">
+                            <img style="height: 500px; margin: 0 auto;" src="img/carrinho1.jpg" class="d-block w-50" alt="carrinho1">
                         </div>
                         <div class="carousel-item">
-                            <img style="height: 500px;" src="img/carrinho2.jpg" class="d-block w-50" alt="...">
+                            <img style="height: 500px; margin: 0 auto;" src="img/carrinho2.jpg" class="d-block w-50" alt="carrinho2">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img style="height: 500px;" src="img/carrinho3.jpg" class="d-block w-50" alt="...">
+                            <img style="height: 500px; margin: 0 auto;" src="img/carrinho3.jpg" class="d-block w-50" alt="carrinho3">
                         </div>
                         <div class="carousel-item">
-                            <img style="height: 500px;" src="img/boneca1.jpg" class="d-block w-50" alt="...">
+                            <img style="height: 500px; margin: 0 auto;" src="img/boneca1.jpg" class="d-block w-50" alt="boneca1">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img style="height: 500px;" src="img/boneca2.jpg" class="d-block w-50" alt="...">
+                            <img style="height: 500px; margin: 0 auto;" src="img/boneca2.jpg" class="d-block w-50" alt="boneca2">
                         </div>
                         <div class="carousel-item">
-                            <img style="height: 500px;" src="img/boneca3.jpg" class="d-block w-50"  alt="...">
+                            <img style="height: 500px; margin: 0 auto;" src="img/boneca3.jpg" class="d-block w-50"  alt="boneca3">
                         </div>
                     </div>
+
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -86,11 +89,6 @@
             </div>
         </div>
 
-
-
-
-
-
         <hr>
         <div id="herois" class="row">
             <p class="indiceProdutos">Herois</p>
@@ -98,9 +96,9 @@
                 <div class="card">
                     <img src="img/hero1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Batman</h5>
+                      <p class="card-text">Boneco Batman Articulado 30cm The Batman O Filme Dc Comics - Sunny</p>
+                      <a href="detalhesProduto.html" target="_blank" class="btn btn-primary">Detalhes</a>
                     </div>
                   </div>
             </div>
@@ -108,9 +106,9 @@
                 <div class="card">
                     <img src="img/hero2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Homem de Ferro</h5>
+                      <p class="card-text">Boneco Vingadores Homem de Ferro Articulado Marvel - ThreeLar</p>
+                      <a href="detalhesProduto.html" target="_blank" class="btn btn-primary">Detalhes</a>
                     </div>
                   </div>
             </div>
@@ -118,9 +116,9 @@
                 <div class="card">
                     <img src="img/hero3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Monkey D. Luffy</h5>
+                      <p class="card-text">Boneco De Brinquedo De Anime One Piece Luffy Battle Edition</p>
+                      <a href="detalhesProduto.html" target="_blank" class="btn btn-primary">Detalhes</a>
                     </div>
                   </div>
             </div>
@@ -133,9 +131,9 @@
                 <div class="card">
                     <img src="img/carrinho1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Carros Rapidos</h5>
+                      <p class="card-text">Dois carros super rapidos para brincar com seus amiguinhos e disputar quem ganha a corrida</p>
+                      <a href="detalhesProduto.html" target="_blank" class="btn btn-primary">Detalhes</a>
                     </div>
                   </div>
             </div>
@@ -143,9 +141,9 @@
                 <div class="card">
                     <img src="img/carrinho2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Caminhãozinho de Lixo</h5>
+                      <p class="card-text">Presenteie seu filho(a) com esse caminhão de lixo super legal, para promover os Garis</p>
+                      <a href="detalhesProduto.html" target="_blank" class="btn btn-primary">Detalhes</a>
                     </div>
                   </div>
             </div>
@@ -153,9 +151,9 @@
                 <div class="card">
                     <img src="img/carrinho3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Caminhao de Bombeiros</h5>
+                      <p class="card-text">Quer se tornar um bombeiro?! Entao comece com esse super carro de bombeiros e se divirta imaginando com é ser um.</p>
+                      <a href="detalhesProduto.html" target="_blank" class="btn btn-primary">Detalhes</a>
                     </div>
                   </div>
             </div>
@@ -168,9 +166,9 @@
                 <div class="card">
                     <img src="img/boneca1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">3 Bonecas Irmas</h5>
+                      <p class="card-text">Quer amiguinhas para brincar?! Compre já esse combo com 3 bonecas lindissimas</p>
+                      <a href="detalhesProduto.html" target="_blank" class="btn btn-primary">Detalhes</a>
                     </div>
                   </div>
             </div>
@@ -178,9 +176,9 @@
                 <div class="card">
                     <img src="img/boneca2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Hair Soft</h5>
+                      <p class="card-text">Compre já a boneca Hair Soft, mais linda ja produzida!!</p>
+                      <a href="detalhesProduto.html" target="_blank" class="btn btn-primary">Detalhes</a>
                     </div>
                   </div>
             </div>
@@ -188,9 +186,9 @@
                 <div class="card">
                     <img src="img/boneca3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Boneca + Conjunto</h5>
+                      <p class="card-text">Quer sua boneca com roupinhas para trocar? Compre ja essa, que vem com a roupa do corpo e mais um conjuntinho lindo.</p>
+                      <a href="detalhesProduto.html" target="_blank" class="btn btn-primary">Detalhes</a>
                     </div>
                   </div>
             </div>
