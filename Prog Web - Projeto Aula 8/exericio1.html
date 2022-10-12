@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Exermplo Array</title>
+  </head>
+
+
+  <body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <label class="form-label">Nome da pessoa</label>
+                <input class="form-control" id="nome" type="text">
+            </div>
+
+            <div class="col-md-12 text-center">
+                <button onclick="salvar()" class="btn btn-danger" style="margin-top: 10px" >Salvar</button>
+                <button onclick="atualizarTabela()" class="btn btn-primary" style="margin-top: 10px" >Atualizar Tabela</button>
+            </div>
+
+            <div class="col-md-12 text-center">
+                <label class="form-label">Filtro</label>
+                <input onkeyup="filtrar()" class="form-control" id="filtro">
+            </div>
+
+            <div class="col-md-12">
+                <ul id="listagem">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+    var nomesArray=[];
+
+        function salvar(){
+            var nomesInput = document.getElementById('nome');
+            console.log(nomesArray.push(nomesInput.value));
+            console.log('Nomes: ' + nomesArray.join(', '));
+
+            atualizarTabela(nomesArray);
+        }
+
+        function atualizarTabela(array){
+
+            var ul = document.getElementById('listagem');
+            ul.innerHTML = '';
+
+            array.forEach(nome => {
+                let li = document.createElement('li');
+                li.innerHTML = nome;
+                ul.appendChild(li);
+            });
+
+            //for (let index = 0; index < nomesArray.length; index++) {
+                
+            //    var li = document.createElement('li');
+            //   li.innerHTML = nomesArray[index];
+
+            
+            //    ul.appendChild(li);
+            //}
+        }
+
+        function filtrar() {
+            let filtro = document.getElementById('filtro')
+            let nomesArrayFilter = nomesArray.filter(n=>n.startsWith(filtro.value));
+            atualizarTabela(nomesArrayFilter);
+        }
+    </script>
+  </body>
+</html>
