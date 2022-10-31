@@ -1,0 +1,13 @@
+<div class="container">
+
+    <p>Exercicio 2</p>
+
+    <input type="number" name="num1" [(ngModel)]="num1" placeholder="Numero 1">
+    <input type="number" name="num2" [(ngModel)]="num2" placeholder="Numero 2">
+    <input type="number" name="resultado" [(ngModel)]="resultado" placeholder="Resultado">
+
+    <button (click)="somar()" class="btn btn-primary" style="margin-left: 10px;">Somar</button>
+    <button (click)="subtracao()" class="btn btn-primary" style="margin-left: 10px;">Subtração</button>
+    <button (click)="multiplicacao()" class="btn btn-primary" style="margin-left: 10px;">Multiplicação</button>
+    <button (click)="divisao()" class="btn btn-primary" style="margin-left: 10px;">Divisão</button>
+</div>
