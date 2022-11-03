@@ -1,0 +1,14 @@
+<div class="container">
+
+    <p>Exercicio 1</p>
+
+    <input type="number" name="ac1" [(ngModel)]="ac1" placeholder="AC1">
+    <input type="number" name="ac2" [(ngModel)]="ac2" placeholder="AC2">
+    <input type="number" name="ag" [(ngModel)]="ag" placeholder="AG">
+    <input type="number" name="af" [(ngModel)]="af" placeholder="AF">
+    
+    <input type="number" name="resultado" [(ngModel)]="resultado" placeholder="Resultado">
+    <input type="text" name="aprovado" [(ngModel)]="aprovado" placeholder="Aprovado ou Nao">
+
+    <button (click)="calcularMedia()" class="btn btn-primary" style="margin-left: 10px;">Calcular</button>
+</div>
